@@ -3,6 +3,17 @@ const app=express();
 const port = 3000;
 
 app.use(dateGenerate)
+
+
+app.get('/',(req,res)=>{
+    res.send('hello worlddd')
+})
+
+app.get('/about',(req,res)=>{
+    res.send('about page')
+})
+
+
 // const server = http.createServer((req,res)=>{
 //     if(req.url==="/"){
 //         res.writeHead(200,{cont})
